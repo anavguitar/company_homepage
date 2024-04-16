@@ -6,16 +6,17 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #header img {
-    width: 30%;
+    height: 10vw
 }
 
 #header ul {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    justify-content: space-around;
+    width: 75%;
     padding: 0;
 }
 
@@ -24,6 +25,7 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 4vw;
     color:lavender;
+    width: min-content;
 }
 
 #header li:hover {
