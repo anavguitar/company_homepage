@@ -1,9 +1,30 @@
+body {
+    background-color: darkblue;
+}
+
 #header {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #header img {
-    width: 50%;
+    width: 30%;
+}
+
+#header ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#header li {
+    list-style-type: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4vw;
+    color:lavender;
+}
+
+#header li:hover {
+    color: plum;
 }
