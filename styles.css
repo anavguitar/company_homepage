@@ -1,5 +1,5 @@
 body {
-    background-color: darkblue;
+    background-color: #A7C7E7;
 }
 
 #header {
@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    padding: 0;
 }
 
 #header li {
