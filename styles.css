@@ -5,7 +5,7 @@ body {
 #header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -13,21 +13,16 @@ body {
     height: 10vw
 }
 
-#header ul {
-    display: flex;
-    justify-content: space-around;
-    width: 75%;
-    padding: 0;
-}
-
-#header li {
+#header a {
     list-style-type: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 4vw;
-    color:lavender;
+    font-size: 3vw;
+    color: #4BA2A2;
     width: min-content;
 }
 
-#header li:hover {
-    color: plum;
+#header a:hover {
+    color:#04B6CC;
+    text-shadow: 6px 6px 12px aliceblue;
+    cursor: pointer;
 }
