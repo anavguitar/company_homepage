@@ -45,6 +45,8 @@ function intervalCounter() {
    const intervalId = setInterval(() =>{
     if(arrIndex > 6) {
         clearInterval(intervalId);
+        arrIndex = 0;
+        imgAlbum.setAttribute('src', `${jsPhotoAlbumArr[0]}`)
         return;
     }
     console.log(arrIndex);
