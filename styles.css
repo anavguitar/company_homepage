@@ -94,3 +94,22 @@ main p {
 #js-photo-album img {
    height: 40vw;
 }
+
+.btn-album {
+    background-color: #02393975;
+    border: 5px solid #4BA2A2;
+    height: 8vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-album button {
+    width: 6vw;
+    height: 4vw;
+    background-color: #4BA2A2;
+}
+
+.fa-backward, .fa-play, .fa-forward{
+    width: 100%;
+}
