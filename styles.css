@@ -97,11 +97,15 @@ main p {
 
 .btn-album {
     background-color: #02393975;
-    border: 5px solid #4BA2A2;
+    /* border: 5px solid #4BA2A2; */
     height: 8vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.color-border {
+    border: 5px solid #4BA2A2;
 }
 
 .btn-album button {
@@ -112,4 +116,17 @@ main p {
 
 .fa-backward, .fa-play, .fa-forward{
     width: 100%;
+}
+
+.img-animation {
+    border: 5px solid lavender;
+    animation: border-shift 2s ease-in-out infinite alternate;
+}
+
+@keyframes border-shift {
+    100% {
+        box-shadow: 6px 6px 12px lavender,
+        -6px -6px 12px plum,
+        -8px -8px 16px violet
+    }
 }

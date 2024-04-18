@@ -16,23 +16,26 @@ const jsPhotoAlbumArr = [
     './images/album/6_pic.jpg'
 ]
 
-function jsPhotoAlbumFunc() {
-
+function imgAlbumAnimate() {
+    imgAlbum.setAttribute('class', 'img-animation');
 }
 
 //works, but I dont quite get it
 let arrIndex = 0;
 function albumAutoPlay() {
-   const intervalId = setInterval(() =>{
-    if(arrIndex > 6) {
-        clearInterval(intervalId);
-        arrIndex = 0;
-        imgAlbum.setAttribute('src', `${jsPhotoAlbumArr[0]}`)
-        return;
-    }
-    console.log(arrIndex);
-    imgAlbum.setAttribute('src', `${jsPhotoAlbumArr[arrIndex]}`);
-    arrIndex++;
-    },5000)
+    imgAlbum.setAttribute('class', 'img-animation');
+    const intervalId = setInterval(() => {
+        if (arrIndex > 6) {
+            clearInterval(intervalId);
+            arrIndex = 0;
+            imgAlbum.setAttribute('src', `${jsPhotoAlbumArr[0]}`)
+            imgAlbum.setAttribute('class', 'color-border');
+            return;
+        }
+        console.log(arrIndex);//dont NEED this
+        imgAlbum.setAttribute('src', `${jsPhotoAlbumArr[arrIndex]}`);
+        arrIndex++;
+    }, 4000)
 }
+
 
