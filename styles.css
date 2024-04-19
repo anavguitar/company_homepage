@@ -204,6 +204,9 @@ footer {
     #header a {
         display: none;
     }
+    #header img {
+        height: 20vw;
+    }
     /* banner styles */
     .desktop-assets {
         display: none;
@@ -226,7 +229,7 @@ footer {
     }
 
     .staff-img {
-        width: 30vw;
+        width: 40vw;
     }
 
     .staff h2 {
