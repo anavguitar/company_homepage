@@ -25,7 +25,7 @@ a, a:visited {
     color: aliceblue;
     text-align: center;
     font-weight: bold;
-    -webkit-text-stroke: 1px #ff00fb;
+    -webkit-text-stroke: .5px #ff00fb;
     /* text-shadow: -12px -12px 24px aliceblue; */
 }
 /* header desktop styles */
@@ -47,7 +47,7 @@ a, a:visited {
     width: min-content;
 }
 
-#header a:hover {
+#header a:hover, #contact-info a:hover {
     color:#04B6CC;
     text-shadow: 6px 6px 12px aliceblue;
     cursor: pointer;
