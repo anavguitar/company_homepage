@@ -196,7 +196,7 @@ footer {
 /* header mobile styles, target 768px */
 @media only screen and (max-width: 768px) {
     /* header styles */
-    #header, #banner {
+    #header, #banner, #founders, .staff-gallery {
         display: flex;
         flex-flow: column;
     }
@@ -219,5 +219,20 @@ footer {
 
     #banner, #js-photo-album img {
        height: 50vw;
+    }
+
+    .staff {
+        margin-bottom: 1vw;
+    }
+
+    .staff-img {
+        width: 30vw;
+    }
+
+    .staff h2 {
+        font-size: 4vw;
+    }
+    .staff h3 {
+        font-size: 3vw;
     }
 }
