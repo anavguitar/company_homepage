@@ -15,6 +15,14 @@ hr {
     border: none;
 }
 
+.font-styling {
+    color: aliceblue;
+    text-align: center;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #023939;
+    /* text-shadow: -12px -12px 24px aliceblue; */
+}
+
 #header {
     width: 100%;
     display: flex;
@@ -54,22 +62,11 @@ hr {
     height: 30vw;
 }
 
-#banner h1, main h1, #founders h1 {
+#banner h1, main h1, #founders h1, #contact-info h1 {
     font-size: 5vw;
-    -webkit-text-stroke: 1px #4BA2A2;
-    color: aliceblue;
-    text-align: center;
     height:fit-content;
     width: 50%;
-    /* border: 4px solid aliceblue; */
-}
-
-p, h2, h3 {
-    color: aliceblue;
     text-align: center;
-    font-weight: bolder;
-    -webkit-text-stroke: 1px #023939;
-    text-shadow: -12px -12px 24px aliceblue;
 }
 
 .mission-p, #founders p {
@@ -93,6 +90,7 @@ main p {
 
 #js-photo-album img {
    height: 30vw;
+   margin-top: 16px;
 }
 
 .btn-album {
@@ -149,6 +147,27 @@ main p {
     justify-content: space-around;
 }
 
+.staff {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.staff-gallery h2, #contact-info h2 {
+    font-size: 3vw;
+}
+
+.staff-gallery h3 {
+    font-size: 2vw;
+}
+
 .staff-img {
     width: 10vw;
 }
+
+#contact-info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
