@@ -51,10 +51,10 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 40vw;
+    height: 30vw;
 }
 
-#banner h1, main h1 {
+#banner h1, main h1, #founders h1 {
     font-size: 5vw;
     -webkit-text-stroke: 1px #4BA2A2;
     color: aliceblue;
@@ -64,7 +64,7 @@ hr {
     /* border: 4px solid aliceblue; */
 }
 
-p {
+p, h2, h3 {
     color: aliceblue;
     text-align: center;
     font-weight: bolder;
@@ -72,11 +72,11 @@ p {
     text-shadow: -12px -12px 24px aliceblue;
 }
 
-.mission-p {
+.mission-p, #founders p {
     margin-bottom: 2.5vw;
     /* background-color: #4BA2A299; */
-    width: 70%;
-    font-size: 2vw;
+    width: 50%;
+    font-size: 1.5vw;
 }
 
 main {
@@ -92,7 +92,7 @@ main p {
 }
 
 #js-photo-album img {
-   height: 40vw;
+   height: 30vw;
 }
 
 .btn-album {
@@ -104,7 +104,7 @@ main p {
     align-items: center;
 }
 
-.color-border {
+.color-border, .staff-img {
     border: 5px solid #4BA2A2;
 }
 
@@ -129,4 +129,26 @@ main p {
         -6px -6px 12px plum,
         -8px -8px 16px violet
     }
+}
+
+#founders {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    /* align-items: center; */
+}
+
+.staff-heading {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.staff-gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.staff-img {
+    width: 10vw;
 }
