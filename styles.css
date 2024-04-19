@@ -171,3 +171,8 @@ main p {
     align-items: center;
 }
 
+footer {
+    font-size: 2vw;
+    margin-bottom: 2.5vw;
+}
+
