@@ -16,10 +16,9 @@ hr {
     border: none;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
 }
-
 
 .font-styling {
     font-family: 'Roboto', sans-serif;
