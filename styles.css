@@ -16,6 +16,11 @@ hr {
     border: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 .font-styling {
     font-family: 'Roboto', sans-serif;
     color: aliceblue;
@@ -38,7 +43,6 @@ hr {
 }
 
 #header a {
-    list-style-type: none;
     font-size: 3vw;
     color: #4BA2A2;
     width: min-content;
