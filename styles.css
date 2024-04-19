@@ -120,7 +120,7 @@ main p {
 
 .img-animation {
     border: 5px solid lavender;
-    animation: border-shift 2s ease-in-out infinite alternate;
+    animation: border-shift 1s ease-in-out infinite alternate;
 }
 
 @keyframes border-shift {
