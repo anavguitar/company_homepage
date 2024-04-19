@@ -1,11 +1,12 @@
-body * {
+/* Global Styles */
+html * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 /* try a midnight purple for the background-color */
 body {
-    background-color: #754B85;
+    background-color: #22022f;
 }
 
 hr {
@@ -16,19 +17,20 @@ hr {
 }
 
 .font-styling {
+    font-family: 'Roboto', sans-serif;
     color: aliceblue;
     text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
     -webkit-text-stroke: 1px #023939;
     /* text-shadow: -12px -12px 24px aliceblue; */
 }
-
+/* header desktop styles */
 #header {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 1vw;
+    margin-top: 2.5vw;
 }
 
 #header img {
@@ -37,7 +39,6 @@ hr {
 
 #header a {
     list-style-type: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3vw;
     color: #4BA2A2;
     width: min-content;
@@ -49,6 +50,10 @@ hr {
     cursor: pointer;
 }
 
+.mobile-assets {
+    display: none;
+}
+/* banner desktop styles */
 #banner {
     display: flex;
     align-items: center;
@@ -73,9 +78,9 @@ hr {
     margin-bottom: 2.5vw;
     /* background-color: #4BA2A299; */
     width: 50%;
-    font-size: 1.5vw;
+    font-size: 1.75vw;
 }
-
+/* main desktop styles */
 main {
     display: flex;
     flex-flow: column nowrap;
@@ -128,7 +133,7 @@ main p {
         -8px -8px 16px violet
     }
 }
-
+/* founders desktop styles */
 #founders {
     width: 100%;
     display: flex;
@@ -142,6 +147,7 @@ main p {
     align-items: center;
 }
 
+
 .staff-gallery {
     display: flex;
     justify-content: space-around;
@@ -153,26 +159,62 @@ main p {
     align-items: center;
 }
 
+.staff-heading > *, .staff > * {
+    margin: 0 0 .5vw 0;
+}
+
 .staff-gallery h2, #contact-info h2 {
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 .staff-gallery h3 {
-    font-size: 2vw;
+    font-size:1.75vw;
 }
 
 .staff-img {
     width: 10vw;
 }
-
+/* contact desktop styles */
 #contact-info {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
+#contact-info * {
+    margin: 0 0 .5vw 0;
+}
+/* footer styles */
 footer {
-    font-size: 2vw;
+    font-size:1.75vw;
     margin-bottom: 2.5vw;
 }
 
+/* header mobile styles, target 768px */
+@media only screen and (max-width: 768px) {
+    /* header styles */
+    #header, #banner {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #header a {
+        display: none;
+    }
+    /* banner styles */
+    .desktop-assets {
+        display: none;
+    }
+
+    .mobile-assets {
+        display: flex;
+    }
+
+    .mobile-p {
+        width: 70%
+    }
+
+    #banner, #js-photo-album img {
+       height: 50vw;
+    }
+}
